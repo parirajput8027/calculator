@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div  class="calculator">
+  <input type ="text" placeholder="0" id="inputbox">
+ <div>
+<button class="Bttns" onclick="clearall()"> AC</button>
+<button class="Bttns" onclick="delval()"> DEL</button>
+<button class="oprtr" onclick ="display('%')"> %</button>
+<button class=" oprtr" onclick ="display('/')"> /</button>
+ </div>
+
+ <div>
+<button class="Bttns" onclick="display('7')"> 7</button>
+<button class="Bttns" onclick="display('8')"> 8</button>
+<button class="Bttns" onclick="display('9')"> 9</button>
+ <button class=" oprtr" onclick ="display('*')"> *</button>
+ </div>
+
+<div>
+<button class="Bttns"onclick="display('4')"> 4</button>
+<button class="Bttns"onclick="display('5')"> 5</button>
+<button class="Bttns"onclick="display('6')"> 6</button>
+<button class=" oprtr"onclick ="display('-')"> -</button>
+ </div>
+
+ <div>
+    <button class="Bttns"onclick ="display('1')"> 1</button>
+    <button class="Bttns"onclick ="display('2')"> 2</button>
+    <button class="Bttns"onclick ="display('3')"> 3</button>
+    <button class=" oprtr" onclick ="display('+')"> +</button>
+     </div>
+ 
+     <div>
+        <button class="Bttns" onclick=" display('00')"> 00</button>
+        <button class="Bttns" onclick="display('0')"> 0</button>
+        <button class="Bttns" onclick ="display('.')"> .</button>
+        <button class="eqoperater" onclick="calculate()"> = </button>
+         </div>
+</div>
+<script src="file.js"></script>
+</body>
+</html>
